@@ -28,7 +28,7 @@ header {
 
 .personagens li {
     width: auto;
-    height: 500px;
+    height: 500 px;
     border: solid 2px black;
     border-radius: 30px;
     margin: 0 100px 0 100px;

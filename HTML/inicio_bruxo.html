@@ -11,10 +11,12 @@
             while (true) {
                 var escolha = prompt("Escolha A \nEscolha B \nQual sua escolha?")
                 if (escolha.toLowerCase() == "a") {
-                    document.write("Escolha correta!")
+                    part1.style.display = "none";
+                    part2_boa.style.display = "block";
                     break;
                 } else if (escolha.toLowerCase() == "b") {
-                    document.write("Escolha errada!")
+                    part1.style.display = "none";
+                    part2_ruim.style.display = "block";
                     break;
                 } else {
                     alert("Insira uma opção válida")
@@ -42,18 +44,31 @@
                     <h2><br>Bruxo <br><br></h2>
                     <img max width="200px" src="./bruxo.png">
                     <div class="caracteristicas">
-                        <div>
+                        <div id="part1" style="display:block">
                             <h3>
                                 <br><br> Você vive em um feudo distante de Durham e começa sua jornada para a cidade.
                                 <br><br>
                             </h3>
-                        </div> <a style="text-decoration:none" type="submit" value="Enviar" id="b"
-                            onClick="clicouBotao();">
-                            <h3 class="seguir">
-                                <br><br> Continuar... <br><br>
+                            <a style="text-decoration:none" type="submit" value="Enviar" id="b"
+                                onClick="clicouBotao();">
+                                <h3 class="seguir">
+                                    <br><br> Continuar... <br><br>
+                                </h3>
+                        </div>
+                        <div id="part2_boa" style="display:none">
+                            <h3>
+                                <br><br> Você chegou na cidade!
+                                <br><br>
                             </h3>
-                        </a>
-                    </div>
+                        </div>
+                        <div id="part2_ruim" style="display:none">
+                            <h3>
+                                <br><br> Você nunca irá crescer!
+                                <br><br>
+                            </h3>
+                        </div>
+                </a>
+                </div>
                 </a>
             </li>
         </ul>
