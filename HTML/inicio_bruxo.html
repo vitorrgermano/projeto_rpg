@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Personagens</title>
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/fase_1.css">
+    <script>
+        function clicouBotao() {
+            while (true) {
+                var escolha = prompt("Escolha A \nEscolha B \nQual sua escolha?")
+                if (escolha.toLowerCase() == "a") {
+                    document.write("Escolha correta!")
+                    break;
+                } else if (escolha.toLowerCase() == "b") {
+                    document.write("Escolha errada!")
+                    break;
+                } else {
+                    alert("Insira uma opção válida")
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <div>
+                <h1><img max width="200px" src="./rpg.png"></h1>
+            </div>
+            <div>
+                <h1 class="titulo">Selecione seu personagem</h1>
+            </div>
+    </header>
+
+    <main>
+        <ul class="personagens">
+            <li>
+                <a style="text-decoration:none" href="caminho_bruxo.html">
+                    <h2><br>Bruxo <br><br></h2>
+                    <img max width="200px" src="./bruxo.png">
+                    <div class="caracteristicas">
+                        <div>
+                            <h3>
+                                <br><br> Você vive em um feudo distante de Durham e começa sua jornada para a cidade.
+                                <br><br>
+                            </h3>
+                        </div> <a style="text-decoration:none" type="submit" value="Enviar" id="b"
+                            onClick="clicouBotao();">
+                            <h3 class="seguir">
+                                <br><br> Continuar... <br><br>
+                            </h3>
+                        </a>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </main>
+
+    <footer>
+        <p class="copyright">&copy; Projeto Resilia - 2021</p>
+    </footer>
+</body>
+
+</html>
