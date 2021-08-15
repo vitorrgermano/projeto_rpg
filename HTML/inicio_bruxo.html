@@ -3,27 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Personagens</title>
+    <title>Bruxo</title>
     <link rel="stylesheet" href="../CSS/reset.css">
     <link rel="stylesheet" href="../CSS/fase_1.css">
-    <script src="../JS/inicio_bruxo.js">
-        function clicouBotao() {
-            while (true) {
-                var escolha = prompt("Escolha A \nEscolha B \nQual sua escolha?")
-                if (escolha.toLowerCase() == "a") {
-                    part1.style.display = "none";
-                    part2_boa.style.display = "block";
-                    break;
-                } else if (escolha.toLowerCase() == "b") {
-                    part1.style.display = "none";
-                    part2_ruim.style.display = "block";
-                    break;
-                } else {
-                    alert("Insira uma opção válida")
-                }
-            }
-        }
-    </script>
+    <script src="../JS/inicio_bruxo.js"></script>
 </head>
 
 <body>
@@ -33,43 +16,40 @@
                 <h1><img max width="200px" src="./rpg.png"></h1>
             </div>
             <div>
-                <h1 class="titulo">Selecione seu personagem</h1>
+                <h1 class="titulo">BRUXO</h1>
             </div>
     </header>
 
     <main>
         <ul class="personagens">
             <li>
-                <a style="text-decoration:none" href="caminho_bruxo.html">
-                    <h2><br>Bruxo <br><br></h2>
-                    <img max width="200px" src="./bruxo.png">
-                    <div class="caracteristicas">
-                        <div id="part1" style="display:block">
-                            <h3>
-                                <br><br> Você vive em um feudo distante de Durham e começa sua jornada para a cidade.
-                                <br><br>
-                            </h3>
-                            <a style="text-decoration:none" type="submit" value="Enviar" id="b"
-                                onClick="alert('Certo');">
-                                <h3 class="seguir">
-                                    <br><br> Continuar... <br><br>
-                                </h3>
-                        </div>
-                        <div id="part2_boa" style="display:none">
-                            <h3>
-                                <br><br> Você chegou na cidade!
-                                <br><br>
-                            </h3>
-                        </div>
-                        <div id="part2_ruim" style="display:none">
-                            <h3>
-                                <br><br> Você nunca irá crescer!
-                                <br><br>
-                            </h3>
-                        </div>
-                </a>
+                <img max width="200px" src="./bruxo.png" style="padding-top:10px">
+                <div class="caracteristicas">
+                    <div id="part1" style="display:block">
+                        <h3>
+                            <br><br>Você vive em um feudo distante de Durham <br>e começa sua jornada para a cidade.
+                            <br><br>
+                        </h3>
+                        <button  class="botao" onclick="pas_1()">Continuar ...</button>
+                    </div>
+                    <div id="part2_boa" style="display:none">
+                        <h3>
+                            <br><br> Você chegou na cidade! <br> Chegando no quartel, você se encontrou com o general 
+                            Einar que logo se apresentou e lhe disse que estão indo para uma batalha. <br><br>
+                            - Seguirei junto com o general para a batalha. <br>
+                            - Irei convencer o general a se render para poupar a tropa. <br>
+                            - Vou embora, pois não acredito que essa será minha vida daqui pra frente. <br>
+                            <br><br>
+                        </h3>
+                        <button  class="botao" onclick="pas_2()">Continuar ...</button>
+                    </div>
+                    <div id="part2_ruim" style="display:none">
+                        <h3>
+                            <br><br> Você nunca irá crescer!
+                            <br><br>
+                        </h3>
+                    </div>
                 </div>
-                </a>
             </li>
         </ul>
     </main>
@@ -77,6 +57,7 @@
     <footer>
         <p class="copyright">&copy; Projeto Resilia - 2021</p>
     </footer>
+
 </body>
 
 </html>
