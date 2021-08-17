@@ -153,7 +153,7 @@ function pas_6_1() {
     while (true) {
         var escolha = prompt("Qual sua escolha?");
         if (escolha.toLowerCase() == "a" ) {
-            window.location.href = "../HTML/pagina_inicial.html" /* direcionar para FASE 2 */
+            window.location.href = "../HTML/f3_cavaleiro.html" /* direcionar para VITORIA */
             break;
         } else if (escolha.toLowerCase() == "b" || escolha.toLowerCase() == "c") {
             part6_boa.style.display = "none";
@@ -169,7 +169,7 @@ function pas_6_2() {
     while (true) {
         var escolha = prompt("Qual sua escolha?");
         if (escolha.toLowerCase() == "a" ) {
-            window.location.href = "../HTML/pagina_inicial.html" /* direcionar para FASE 2 */
+            window.location.href = "../HTML/f3_bruxo.html" /* direcionar para FASE 3 */
             break;
         } else if (escolha.toLowerCase() == "b" || escolha.toLowerCase() == "c") {
             part6_outra.style.display = "none";
@@ -182,5 +182,5 @@ function pas_6_2() {
 }
 
 function pas_7() {
-            window.location.href = "../HTML/pagina_inicial.html" /* direcionar para FASE 2 */
+            window.location.href = "../HTML/f3_cavaleiro.html" /* direcionar para VITORIA */
 }
