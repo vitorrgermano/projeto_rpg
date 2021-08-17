@@ -6,7 +6,7 @@
     <title>Bruxo</title>
     <link rel="stylesheet" href="../CSS/reset.css">
     <link rel="stylesheet" href="../CSS/fase_1.css">
-    <script src="../JS/inicio_bruxo.js"></script>
+    <script src="../JS/js_fases.js"></script>
 </head>
 
 <body>
@@ -27,27 +27,132 @@
                 <div class="caracteristicas">
                     <div id="part1" style="display:block">
                         <h3>
-                            <br><br>Você vive em um feudo distante de Durham <br>e começa sua jornada para a cidade.
+                            <br><br>Você vive em um feudo distante de Durham <br>
+                            e começa sua jornada para a cidade. O que você fará?
                             <br><br>
+                            A - Sego até a cidade. <br>
+                            B - Fico em meu feudo. <br>
                         </h3>
                         <button  class="botao" onclick="pas_1()">Continuar ...</button>
                     </div>
                     <div id="part2_boa" style="display:none">
                         <h3>
                             <br><br> Você chegou na cidade! <br> Chegando no quartel, você se encontrou com o general 
-                            Einar que logo se apresentou e lhe disse que estão indo para uma batalha. <br><br>
-                            - Seguirei junto com o general para a batalha. <br>
-                            - Irei convencer o general a se render para poupar a tropa. <br>
-                            - Vou embora, pois não acredito que essa será minha vida daqui pra frente. <br>
+                            Einar que logo se apresentou e lhe disse que estão indo para uma batalha. O que você fará? <br><br>
+                            A - Sego junto com o general para a batalha. <br>
+                            B - Vou convencer o general a se render para poupar a tropa. <br>
+                            C - Vou embora, pois não acredito quero essa vida daqui pra frente. <br>
                             <br><br>
                         </h3>
                         <button  class="botao" onclick="pas_2()">Continuar ...</button>
                     </div>
-                    <div id="part2_ruim" style="display:none">
+                    <div id="part3_boa" style="display:none">
                         <h3>
-                            <br><br> Você nunca irá crescer!
+                            <br><br> Você segue marchando rumo a batalha! <br> Durante a marcha, o general segue ao seu lado contando
+                            como se tornou general por conta de suas vitórias em grandes batalhas passadas contra o reino vizinho de Wantag
+                            enquanto caminhavam você foi ficando entediado. O que você fará? <br><br>
+                            A - Sigo minha marcha sem incomodar a história do general. <br>
+                            B - Peço educadamente para sair da formação para avaliar o terreno. <br>
+                            C - Peço para que ele pare de falar pois não estou mais aguentando essa história. <br>
                             <br><br>
                         </h3>
+                        <button  class="botao" onclick="pas_3_1()">Continuar ...</button>
+                    </div>
+                    <div id="part3_outra" style="display:none">
+                        <h3>
+                            <br><br> Você segue marchando rumo a batalha! <br> O general segue insatisfeito ao seu lado por acreditar que você 
+                            não entende a importância das batalhas para o reino, ele vai lhe contando como se tornou general por conta de suas 
+                            vitórias em grandes batalhas passadas contra o reino vizinho de Wantag enquanto caminhavam você foi ficando entediado.
+                            O que você fará? <br><br>
+                            A - Sego minha marcha sem incomodar a história do general. <br>
+                            B - Peço educadamente para sair da formação para avaliar o terreno. <br>
+                            C - Peço para que ele pare de falar pois não estou mais aguentando essa história. <br>
+                            <br><br>
+                        </h3>
+                        <button  class="botao" onclick="pas_3_2()">Continuar ...</button>
+                    </div>
+                    <div id="part4_boa" style="display:none">
+                        <h3>
+                            <br><br> Vocês chegam ao campo de batalha! <br> O general aprecia sua atenção por ter escutado suas histórias e 
+                            o chama para acompanhá-lo na sala de guerra, onde as estratégias serão discutidas antes da batalha. Você o acompanha
+                            e ao entrar na sala de guerra começa a se assustar com as estratégias do general, que não poupa os homens na batalha
+                            você acredita que exista um caminho melhor. O que você fará? <br><br>
+                            A - Me mantenho em silêncio enquanto o general traça todas as estratégias para a batalha.<br>
+                            B - Apresento educadamente minha opinião ao general e mostro que poderia haver outras alternativas.<br>
+                            C - Questiono a autoridade do general e tento convencer todos os comandantes a abortar a batalha.<br>
+                            <br><br>
+                        </h3>
+                        <button  class="botao" onclick="pas_4_1()">Continuar ...</button>
+                    </div>
+                    <div id="part4_outra" style="display:none">
+                        <h3>
+                            <br><br> Vocês chegam ao campo de batalha! <br> O general não gostou muito da sua falta de atenção com ele porém, mesmo assim 
+                            o chama para acompanhá-lo na sala de guerra, onde as estratégias serão discutidas antes da batalha. Você o acompanha
+                            e ao entrar na sala de guerra começa a se assustar com as estratégias do general, que não poupa os homens na batalha
+                            você acredita que exista um caminho melhor. O que você fará? <br><br>
+                            A - Me mantenho em silêncio enquanto o general traça todas as estratégias para a batalha.<br>
+                            B - Apresento educadamente minha opinião ao general e mostro que poderia haver outras alternativas.<br>
+                            C - Questiono a autoridade do general e tento convencer todos os comandantes a abortar a batalha.<br>
+                            <br><br>
+                        </h3>
+                        <button  class="botao" onclick="pas_4_2()">Continuar ...</button>
+                    </div>
+                    <div id="part5_boa" style="display:none">
+                        <h3>
+                            <br><br> A batalha termina! <br> Vocês são vitoriosos! Porém, durante a marcha de retorno você percebe todos os 
+                            prisioneiros de guera, todas as vidas perdidas espalhadas pelo campo de batalha e todas as famílias devastadas 
+                            pelo envento e fica horrorizado com tudo aquilo. O que você fará? <br><br>
+                            A - Sigo silêncio pensando em todas as perdas causadas pela guerra. <br>
+                            B - Converso educadamente com o general quanto a estratégia adotada e a necessidade da batalha. <br>
+                            C - Digo ao general que ele não deveria estar no comando, pois ele não pensa em seu povo, apenas em si mesmo. <br>
+                            <br><br>
+                        </h3>
+                        <button  class="botao" onclick="pas_5_1()">Continuar ...</button>
+                    </div>
+                    <div id="part5_outra" style="display:none">
+                        <h3>
+                            <br><br> A batalha termina! <br> Vocês são vitoriosos! O general aproveita para mostrar a você que os fins justificam os
+                            meios. Porém, durante a marcha de retorno você percebe todos os prisioneiros de guera, todas as vidas perdidas espalhadas
+                            pelo campo de batalha e todas as famílias devastadas pelo envento e fica horrorizado com tudo aquilo. O que você fará? <br><br>
+                            A - Sigo silêncio pensando em todas as perdas causadas pela guerra. <br>
+                            B - Converso educadamente com o general quanto a estratégia adotada e a necessidade da batalha. <br>
+                            C - Digo ao general que ele não deveria estar no comando, pois ele não pensa em seu povo, apenas em si mesmo. <br>
+                            <br><br>
+                        </h3>
+                        <button  class="botao" onclick="pas_5_2()">Continuar ...</button>
+                    </div>
+                    <div id="part6_boa" style="display:none">
+                        <h3>
+                            <br><br> Vocês retornam a cidade! <br> São recebidos como herois, o general recebe condecorações e todos veem 
+                            você ao lado dele. Após toda essa guerra, o general lhe chama para acompanhá-lo em uma reunião com o rei e 
+                            você entende que há outros assuntos a serem tratados por pessoas do comando. O que você fará? <br><br>
+                            A - Vou acompanhar o general em sua reunião com o rei, pois assim acredito que conseguirei mostrá-lo outros caminhos.<br>
+                            B - Fico feliz pela oferta do general, mas preciso ficar um tempo comigo mesmo para refletir sobre todas as questões da batalha. <br>
+                            C - Não entro nem no portão da cidade, prefiro voltar para meu feudo e minha família. <br>
+                            <br><br>
+                        </h3>
+                        <button  class="botao" onclick="pas_6_1()">Continuar ...</button>
+                    </div>
+                    <div id="part6_outra" style="display:none">
+                        <h3>
+                            <br><br> Vocês retornam a cidade! <br> São recebidos como herois, o general recebe condecorações e todos veem 
+                            você ao lado dele. Porém ele está muito desconfiado de você e suas atitudes ao final da batalha, mas ele decide
+                            ti dar outra chance. O general lhe chama para acompanhá-lo em uma reunião com o rei e 
+                            você entende que há outros assuntos a serem tratados por pessoas do comando. O que você fará? <br><br>
+                            A - Vou acompanhar o general em sua reunião com o rei, pois assim acredito que conseguirei mostrá-lo outros caminhos.<br>
+                            B - Fico feliz pela oferta do general, mas preciso ficar um tempo comigo mesmo para refletir sobre todas as questões da batalha. <br>
+                            C - Não entro nem no portão da cidade, prefiro voltar para meu feudo e minha família. <br>
+                            <br><br>
+                        </h3>
+                        <button  class="botao" onclick="pas_6_2()">Continuar ...</button>
+                    </div>
+                    <div id="part7_outra" style="display:none">
+                        <h3>
+                            <br><br> Vocês pensa demais! <br> Mesmo sendo filho de um nobre, você não deve quesionar tanto as autoridades
+                            nobre é seu pai, você é apenas um jovem e precisa crescer para começar a tomar decisões assim.<br>
+                            <br><br>
+                        </h3>
+                        <button  class="botao" onclick="pas_7()">Continuar ...</button>
                     </div>
                 </div>
             </li>
