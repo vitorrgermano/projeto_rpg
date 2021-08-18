@@ -3,7 +3,7 @@ var escolha;
 function pas_1() {
     while (true) {
         escolha = prompt("Qual sua escolha?");
-        if (escolha.toLowerCase() == "a" ) {
+        if (escolha.toLowerCase() == "a") {
             part1.style.display = "none";
             part2_boa.style.display = "block";
             break;
@@ -19,7 +19,7 @@ function pas_1() {
 function pas_2() {
     while (true) {
         var escolha = prompt("Qual sua escolha?");
-        if (escolha.toLowerCase() == "a" ) {
+        if (escolha.toLowerCase() == "a") {
             part2_boa.style.display = "none";
             part3_boa.style.display = "block";
             break;
@@ -27,7 +27,7 @@ function pas_2() {
             part2_boa.style.display = "none";
             part3_outra.style.display = "block";
             break;
-        } else if (escolha.toLowerCase() == "c") { 
+        } else if (escolha.toLowerCase() == "c") {
             window.location.href = "../HTML/pagina_inicial.html" /* direcionar ao GAME OVER */
         } else {
             alert("Insira uma opção válida")
@@ -38,7 +38,7 @@ function pas_2() {
 function pas_3_1() {
     while (true) {
         var escolha = prompt("Qual sua escolha?");
-        if (escolha.toLowerCase() == "a" ) {
+        if (escolha.toLowerCase() == "a") {
             part3_boa.style.display = "none";
             part4_boa.style.display = "block";
             break;
@@ -46,7 +46,7 @@ function pas_3_1() {
             part3_boa.style.display = "none";
             part4_outra.style.display = "block";
             break;
-        } else if (escolha.toLowerCase() == "c") { 
+        } else if (escolha.toLowerCase() == "c") {
             window.location.href = "../HTML/pagina_inicial.html" /* direcionar ao GAME OVER */
         } else {
             alert("Insira uma opção válida")
@@ -57,15 +57,15 @@ function pas_3_1() {
 function pas_3_2() {
     while (true) {
         var escolha = prompt("Qual sua escolha?");
-        if (escolha.toLowerCase() == "a" ) {
+        if (escolha.toLowerCase() == "a") {
             part3_outra.style.display = "none";
-            part4_boa.style.display = "block";
+            part6_boa.style.display = "block";
             break;
         } else if (escolha.toLowerCase() == "b") {
             part3_outra.style.display = "none";
-            part4_outra.style.display = "block";
+            part7_outra.style.display = "block";
             break;
-        } else if (escolha.toLowerCase() == "c") { 
+        } else if (escolha.toLowerCase() == "c") {
             window.location.href = "../HTML/pagina_inicial.html" /* direcionar ao GAME OVER */
         } else {
             alert("Insira uma opção válida")
@@ -76,7 +76,7 @@ function pas_3_2() {
 function pas_4_1() {
     while (true) {
         var escolha = prompt("Qual sua escolha?");
-        if (escolha.toLowerCase() == "a" ) {
+        if (escolha.toLowerCase() == "a") {
             part4_boa.style.display = "none";
             part5_boa.style.display = "block";
             break;
@@ -84,26 +84,7 @@ function pas_4_1() {
             part4_boa.style.display = "none";
             part5_outra.style.display = "block";
             break;
-        } else if (escolha.toLowerCase() == "c") { 
-            window.location.href = "../HTML/pagina_inicial.html" /* direcionar ao GAME OVER */
-        } else {
-            alert("Insira uma opção válida")
-        }
-    }
-}
-
-function pas_4_2() {
-    while (true) {
-        var escolha = prompt("Qual sua escolha?");
-        if (escolha.toLowerCase() == "a" ) {
-            part4_outra.style.display = "none";
-            part5_boa.style.display = "block";
-            break;
-        } else if (escolha.toLowerCase() == "b") {
-            part4_outra.style.display = "none";
-            part5_outra.style.display = "block";
-            break;
-        } else if (escolha.toLowerCase() == "c") { 
+        } else if (escolha.toLowerCase() == "c") {
             window.location.href = "../HTML/pagina_inicial.html" /* direcionar ao GAME OVER */
         } else {
             alert("Insira uma opção válida")
@@ -114,7 +95,7 @@ function pas_4_2() {
 function pas_5_1() {
     while (true) {
         var escolha = prompt("Qual sua escolha?");
-        if (escolha.toLowerCase() == "a" ) {
+        if (escolha.toLowerCase() == "a") {
             part5_boa.style.display = "none";
             part6_boa.style.display = "block";
             break;
@@ -122,26 +103,7 @@ function pas_5_1() {
             part5_boa.style.display = "none";
             part6_outra.style.display = "block";
             break;
-        } else if (escolha.toLowerCase() == "c") { 
-            window.location.href = "../HTML/pagina_inicial.html" /* direcionar ao GAME OVER */
-        } else {
-            alert("Insira uma opção válida")
-        }
-    }
-}
-
-function pas_5_2() {
-    while (true) {
-        var escolha = prompt("Qual sua escolha?");
-        if (escolha.toLowerCase() == "a" ) {
-            part5_outra.style.display = "none";
-            part6_boa.style.display = "block";
-            break;
-        } else if (escolha.toLowerCase() == "b") {
-            part5_outra.style.display = "none";
-            part6_outra.style.display = "block";
-            break;
-        } else if (escolha.toLowerCase() == "c") { 
+        } else if (escolha.toLowerCase() == "c") {
             window.location.href = "../HTML/pagina_inicial.html" /* direcionar ao GAME OVER */
         } else {
             alert("Insira uma opção válida")
@@ -152,7 +114,7 @@ function pas_5_2() {
 function pas_6_1() {
     while (true) {
         var escolha = prompt("Qual sua escolha?");
-        if (escolha.toLowerCase() == "a" ) {
+        if (escolha.toLowerCase() == "a") {
             window.location.href = "../HTML/f2_rei.html" /* direcionar para FASE 2 */
             break;
         } else if (escolha.toLowerCase() == "b" || escolha.toLowerCase() == "c") {
@@ -168,7 +130,7 @@ function pas_6_1() {
 function pas_6_2() {
     while (true) {
         var escolha = prompt("Qual sua escolha?");
-        if (escolha.toLowerCase() == "a" ) {
+        if (escolha.toLowerCase() == "a") {
             window.location.href = "../HTML/f2_rei.html" /* direcionar para FASE 2 */
             break;
         } else if (escolha.toLowerCase() == "b" || escolha.toLowerCase() == "c") {
@@ -182,5 +144,5 @@ function pas_6_2() {
 }
 
 function pas_7() {
-            window.location.href = "../HTML/pagina_inicial.html" /* direcionar para GAME OVER */
+    window.location.href = "../HTML/pagina_inicial.html" /* direcionar para GAME OVER */
 }
