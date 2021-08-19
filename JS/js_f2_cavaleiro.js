@@ -29,7 +29,24 @@ function pas_2_1() {
             part3_boa.style.display = "block";
             break;
         } else if (escolha.toLowerCase() == "c") {
-            part3_boa.style.display = "none";
+            part2_boa.style.display = "none";
+            part7.style.display = "block";
+            break;
+        } else {
+            alert("Insira uma opção válida")
+        }
+    }
+}
+
+function pas_2_2() {
+    while (true) {
+        var escolha = prompt("Qual sua escolha?");
+        if (escolha.toLowerCase() == "a" || escolha.toLowerCase() == "b") {
+            part2_outra.style.display = "none";
+            part3_boa.style.display = "block";
+            break;
+        } else if (escolha.toLowerCase() == "c") {
+            part2_outra.style.display = "none";
             part7.style.display = "block";
             break;
         } else {
