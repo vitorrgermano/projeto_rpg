@@ -27,9 +27,14 @@ header {
     text-decoration: none;
 }
 
+.personagens img {
+    padding-top: 10px;
+}
+
 .personagens li {
     width: auto;
-    height: 500 px;
+    height: auto;
+    padding: 15px;
     border: solid 2px black;
     border-radius: 30px;
     margin: 0 100px 0 100px;
@@ -43,6 +48,10 @@ header {
 
 .personagens h3{
     color:black;
+}
+
+.personagens a {
+    text-decoration: none;
 }
 
 .caracteristicas{
@@ -83,13 +92,58 @@ header {
     font-weight: bold;
 }
 
-
 .botao:active{
     box-shadow: 0 0 0 0 #CCCCCC, inset 2px 2px 2px #EEEEEE;
     transform: translate3d(3px 3px);
 }
 
+#part1 {
+    display: block;
+}
 
+#part2_boa {
+    display: none;
+}
+
+#part2_outra {
+    display: none;
+}
+
+#part3_boa {
+    display: none;
+}
+
+#part3_outra {
+    display: none;
+}
+
+#part4_boa {
+    display: none;
+}
+
+#part4_outra {
+    display: none;
+}
+
+#part5_boa {
+    display: none;
+}
+
+#part5_outra {
+    display: none;
+}
+
+#part6_boa {
+    display: none;
+}
+
+#part6_outra {
+    display: none;
+}
+
+#part7 {
+    display: none;
+}
 footer{
     text-align: center;
     padding: 40px 0;

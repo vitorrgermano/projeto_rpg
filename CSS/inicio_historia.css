@@ -60,17 +60,22 @@ header {
     color: black;
 }
 
-.seguir:hover {
-    border-color: #C78C19;
+.botao {
+    margin: 5px;
+    text-decoration: none;
+    color:#000000;
+    border-radius: 5px;
+    box-shadow: 2px 2px 0 0 #EEEEEE;
+    font-size: 25px;
+    font-weight: bold;
 }
 
-.seguir:active {
-    border-color: #088c19;
+
+.botao:active{
+    box-shadow: 0 0 0 0 #CCCCCC, inset 2px 2px 2px #EEEEEE;
+    transform: translate3d(3px 3px);
 }
 
-.seguir:hover {
-    font-size: 35px;
-}
 
 footer{
     text-align: center;
