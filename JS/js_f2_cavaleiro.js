@@ -76,8 +76,7 @@ function pas_5_1() {
     while (true) {
         var escolha = prompt("Qual sua escolha?");
         if (escolha.toLowerCase() == "b") {
-            part5_boa.style.display = "none";
-            part6_boa.style.display = "block";
+            window.location.href = "../HTML/final.html" 
             break;
         } else if (escolha.toLowerCase() == "a" || escolha.toLowerCase() == "c") {
             part5_boa.style.display = "none";
