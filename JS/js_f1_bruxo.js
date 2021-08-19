@@ -8,7 +8,7 @@ function pas_1() {
             part2_boa.style.display = "block";
             break;
         } else if (escolha.toLowerCase() == "b") {
-            window.location.href = "../HTML/pagina_inicial.html" /* direcionar ao GAME OVER */
+            window.location.href = "../HTML/game_over.html" /* direcionar ao GAME OVER */
             break;
         } else {
             alert("Insira uma opção válida: 'A' ou 'B'.")
@@ -28,7 +28,9 @@ function pas_2() {
             part3_outra.style.display = "block";
             break;
         } else if (escolha.toLowerCase() == "c") { 
-            window.location.href = "../HTML/pagina_inicial.html" /* direcionar ao GAME OVER */
+            part2_boa.style.display = "none";
+            part7.style.display = "block";
+            break;
         } else {
             alert("Insira uma opção válida")
         }
@@ -38,16 +40,18 @@ function pas_2() {
 function pas_3_1() {
     while (true) {
         var escolha = prompt("Qual sua escolha?");
-        if (escolha.toLowerCase() == "a" ) {
+        if (escolha.toLowerCase() == "a") {
             part3_boa.style.display = "none";
             part4_boa.style.display = "block";
             break;
         } else if (escolha.toLowerCase() == "b") {
             part3_boa.style.display = "none";
-            part4_outra.style.display = "block";
+            part4_boa.style.display = "block";    /* VOLTAR AQUI!! */
             break;
         } else if (escolha.toLowerCase() == "c") { 
-            window.location.href = "../HTML/pagina_inicial.html" /* direcionar ao GAME OVER */
+            part3_boa.style.display = "none";
+            part7.style.display = "block";
+            break;
         } else {
             alert("Insira uma opção válida")
         }
@@ -59,14 +63,12 @@ function pas_3_2() {
         var escolha = prompt("Qual sua escolha?");
         if (escolha.toLowerCase() == "a" ) {
             part3_outra.style.display = "none";
-            part4_boa.style.display = "block";
-            break;
-        } else if (escolha.toLowerCase() == "b") {
-            part3_outra.style.display = "none";
             part4_outra.style.display = "block";
             break;
-        } else if (escolha.toLowerCase() == "c") { 
-            window.location.href = "../HTML/pagina_inicial.html" /* direcionar ao GAME OVER */
+        } else if (escolha.toLowerCase() == "b" || escolha.toLowerCase() == "c") {
+            part3_outra.style.display = "none";
+            part7.style.display = "block";
+            break;
         } else {
             alert("Insira uma opção válida")
         }
@@ -76,16 +78,14 @@ function pas_3_2() {
 function pas_4_1() {
     while (true) {
         var escolha = prompt("Qual sua escolha?");
-        if (escolha.toLowerCase() == "a" ) {
+        if (escolha.toLowerCase() == "a" || escolha.toLowerCase() == "b" ) {
             part4_boa.style.display = "none";
             part5_boa.style.display = "block";
             break;
-        } else if (escolha.toLowerCase() == "b") {
-            part4_boa.style.display = "none";
-            part5_outra.style.display = "block";
-            break;
         } else if (escolha.toLowerCase() == "c") { 
-            window.location.href = "../HTML/pagina_inicial.html" /* direcionar ao GAME OVER */
+            part4_boa.style.display = "none";
+            part7.style.display = "block";
+            break;
         } else {
             alert("Insira uma opção válida")
         }
@@ -99,12 +99,10 @@ function pas_4_2() {
             part4_outra.style.display = "none";
             part5_boa.style.display = "block";
             break;
-        } else if (escolha.toLowerCase() == "b") {
+        } else if (escolha.toLowerCase() == "b" || escolha.toLowerCase() == "c") {
             part4_outra.style.display = "none";
             part5_outra.style.display = "block";
             break;
-        } else if (escolha.toLowerCase() == "c") { 
-            window.location.href = "../HTML/pagina_inicial.html" /* direcionar ao GAME OVER */
         } else {
             alert("Insira uma opção válida")
         }
@@ -182,5 +180,5 @@ function pas_6_2() {
 }
 
 function pas_7() {
-            window.location.href = "../HTML/pagina_inicial.html" /* direcionar para GAME OVER */
+            window.location.href = "../HTML/game_over.html" /* direcionar para GAME OVER */
 }
