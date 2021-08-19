@@ -121,26 +121,8 @@ function pas_5_1() {
             part6_outra.style.display = "block";
             break;
         } else if (escolha.toLowerCase() == "c") { 
-            window.location.href = "../HTML/pagina_inicial.html" /* direcionar ao GAME OVER */
-        } else {
-            alert("Insira uma opção válida")
-        }
-    }
-}
-
-function pas_5_2() {
-    while (true) {
-        var escolha = prompt("Qual sua escolha?");
-        if (escolha.toLowerCase() == "a" ) {
-            part5_outra.style.display = "none";
-            part6_boa.style.display = "block";
-            break;
-        } else if (escolha.toLowerCase() == "b") {
-            part5_outra.style.display = "none";
-            part6_outra.style.display = "block";
-            break;
-        } else if (escolha.toLowerCase() == "c") { 
-            window.location.href = "../HTML/pagina_inicial.html" /* direcionar ao GAME OVER */
+            part5_boa.style.display = "none";
+            part7.style.display = "block";
         } else {
             alert("Insira uma opção válida")
         }
@@ -155,7 +137,7 @@ function pas_6_1() {
             break;
         } else if (escolha.toLowerCase() == "b" || escolha.toLowerCase() == "c") {
             part6_boa.style.display = "none";
-            part7_outra.style.display = "block";
+            part7.style.display = "block";
             break;
         } else {
             alert("Insira uma opção válida")
@@ -171,7 +153,7 @@ function pas_6_2() {
             break;
         } else if (escolha.toLowerCase() == "b" || escolha.toLowerCase() == "c") {
             part6_outra.style.display = "none";
-            part7_outra.style.display = "block";
+            part7.style.display = "block";
             break;
         } else {
             alert("Insira uma opção válida")
