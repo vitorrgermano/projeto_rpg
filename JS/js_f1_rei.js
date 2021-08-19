@@ -112,8 +112,7 @@ function pas_6_1() {
     while (true) {
         var escolha = prompt("Qual sua escolha?");
         if (escolha.toLowerCase() == "a") {
-            part6_boa.style.display = "none";
-            part4_outra.style.display = "block";
+            window.location.href = "../HTML/f2_rei.html"
             break;
         } else if (escolha.toLowerCase() == "b" || escolha.toLowerCase() == "c") {
             part6_boa.style.display = "none";
